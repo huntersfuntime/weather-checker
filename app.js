@@ -26,19 +26,6 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
 
 
 
-const request = require('request');
-
-
-request({
-    url: "",
-    json: true
-}, (error, response, body) => {
-    if (!error && response.statusCode === 200) {
-        console.log(body.currently.temperature);
-    } else {
-        console.log('Unable to fetch weather');
-    }
-});
 
 
 
@@ -55,5 +42,3 @@ request({
 
 
 
-
-// 2d1047e1ea738b623f1826afa4c635a2
